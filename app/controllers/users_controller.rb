@@ -10,8 +10,9 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    fm = @user.microposts.first.content
-    render html: fm
+    # Display content of user's first micropost in user r show page.
+    #fm = @user.microposts.first.content
+    #render html: fm
   end
 
   # GET /users/new
