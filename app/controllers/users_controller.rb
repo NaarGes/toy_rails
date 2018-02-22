@@ -10,6 +10,8 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    fm = @user.microposts.first.content
+    render html: fm
   end
 
   # GET /users/new
